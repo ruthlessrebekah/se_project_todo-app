@@ -36,3 +36,12 @@ This project is deployed on GitHub Pages:
 ## Live Demo
 
 You can try out the Todo List application here: [Live Todo App](https://ruthlessrebekah.github.io/se_project_todo-app/)
+
+## Recent Updates
+
+### Code Refactoring (Date: [Today's Date])
+
+- Improved code organization by removing static methods from Todo class
+- Moved Todo instantiation to index.js for better separation of concerns
+- Enhanced maintainability by simplifying the Todo class structure
+- Updated generateTodo function to follow OOP best practices

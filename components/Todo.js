@@ -4,11 +4,6 @@ class Todo {
     this._templateElement = document.querySelector(selector);
   }
 
-  static generate(data) {
-    const todo = new Todo(data, "#todo-template");
-    return todo.getView();
-  }
-
   _setEventListeners() {
     this._todoDeleteBtn.addEventListener("click", () => {
       this._todoElement.remove();
