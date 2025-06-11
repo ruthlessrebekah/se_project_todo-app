@@ -11,6 +11,7 @@ This todo application allows users to:
 - Delete unwanted todo items
 - Add new todos by pressing Enter or clicking the add button
 - Each todo item has a unique identifier for reliable tracking
+- View a live counter showing the number of completed and total tasks
 
 ## Technology
 
@@ -25,6 +26,9 @@ This project is built using:
 Key technical features:
 
 - Custom `Todo` class for todo item management
+- `Section` class for rendering and managing lists of todos
+- `Popup` and `PopupWithForm` classes for modal management and form handling
+- `TodoCounter` class for tracking and displaying completed/total tasks
 - `FormValidator` class for form input validation
 - Modular code structure with separate component files
 - Event delegation for efficient event handling
@@ -39,9 +43,10 @@ You can try out the Todo List application here: [Live Todo App](https://ruthless
 
 ## Recent Updates
 
-### Code Refactoring (Date: [Today's Date])
+### Feature & Bug Fixes (June 10, 2025)
 
-- Improved code organization by removing static methods from Todo class
-- Moved Todo instantiation to index.js for better separation of concerns
-- Enhanced maintainability by simplifying the Todo class structure
-- Updated generateTodo function to follow OOP best practices
+- Implemented `Section` class for rendering and managing todo lists
+- Added `Popup` and `PopupWithForm` classes for modal and form management
+- Improved `TodoCounter` logic to accurately update completed and total counts, especially when deleting completed tasks
+- Ensured all classes are in separate files and follow loose coupling principles
+- Updated event handling to use class methods for popup and form actions
